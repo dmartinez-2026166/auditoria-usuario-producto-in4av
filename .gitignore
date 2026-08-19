@@ -1,3 +1,11 @@
+src/com/diegomartinez/system/config/Enviroment.java
+dist/*
+build/*
+
+
+
+
+
 # Compiled class file
 *.class
 
