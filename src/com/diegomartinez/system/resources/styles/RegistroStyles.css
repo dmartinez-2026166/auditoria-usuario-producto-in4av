@@ -1,0 +1,6 @@
+.btn-guardar {
+    -fx-background-color: #0f0;
+}
+.error-campo{
+    -fx-border-color: red;
+}

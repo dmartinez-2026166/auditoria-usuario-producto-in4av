@@ -26,20 +26,24 @@ public class ViewFactory {
     }
 
     public void loadScene(String nameFile){
-        Scene scene = null;
-        try {
-            switch (nameFile) {
-                case  "login" -> scene = loadFileFXML("LoginView.fxml", 400, 500);
-                default -> scene = loadFileFXML("LoginView.fxml", 0, 0);
-            }
-            SceneManager.getInstanciaSceneManager().changeScene(scene);
-        } catch (NullPointerException e) {
-            System.out.println("Error load scene");
-            //alert
+    Scene scene = null;
+    try {
+        switch (nameFile) {
+            case  "login" -> scene = loadFileFXML("LoginView.fxml", 400, 500);
+            case "registro" -> scene = loadFileFXML("RegistroView.fxml", 400, 500);
+            default -> scene = loadFileFXML("LoginView.fxml", 0, 0);
         }
+        SceneManager.getInstanciaSceneManager().changeScene(scene);
+    } catch (NullPointerException e) {
+        System.out.println("Error load scene");
     }
+}
     
     public void viewLogin() {
         loadScene("login");
+    }
+    
+    public void viewRegistro() {
+        loadScene("registro");
     }
 }
