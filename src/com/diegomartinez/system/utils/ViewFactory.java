@@ -30,7 +30,11 @@ public class ViewFactory {
     try {
         switch (nameFile) {
             case  "login" -> scene = loadFileFXML("LoginView.fxml", 400, 500);
-            case "registro" -> scene = loadFileFXML("RegistroView.fxml", 400, 500);
+            case "register" -> {
+                scene = loadFileFXML("RegistroView.fxml", 400, 500);
+                SceneManager.getInstanciaSceneManager().getStagePrincipal().setTitle("REGISTRO DE USUARIO");
+                SceneManager.getInstanciaSceneManager().getStagePrincipal().setResizable(false);
+            }
             default -> scene = loadFileFXML("LoginView.fxml", 0, 0);
         }
         SceneManager.getInstanciaSceneManager().changeScene(scene);
@@ -44,6 +48,6 @@ public class ViewFactory {
     }
     
     public void viewRegistro() {
-        loadScene("registro");
+        loadScene("register");
     }
 }

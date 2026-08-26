@@ -2,12 +2,16 @@ package com.diegomartinez.system.controller;
 
 import com.diegomartinez.system.utils.ViewFactory;
 import com.diegomartinez.system.utils.AlertInformation;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 
-public class LoginController {
+public class LoginController implements Initializable{
     private final ViewFactory viewFactory = new ViewFactory();
     private AlertInformation alerta = new AlertInformation();
     
@@ -18,8 +22,14 @@ public class LoginController {
     private Hyperlink lnkRegistro;
     
     @FXML
-    private void onRegistroClick() {
-        viewFactory.viewRegistro();
+    private void onRegister(MouseEvent event) {
+        ViewFactory viewFacto = new ViewFactory();
+        viewFacto.viewRegistro();
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        
     }
     
     @FXML

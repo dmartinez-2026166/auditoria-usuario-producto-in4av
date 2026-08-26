@@ -1,7 +1,6 @@
 package com.diegomartinez.system.controller;
 
 import com.diegomartinez.system.utils.AlertInformation;
-import com.diegomartinez.system.utils.SceneManager;
 import com.diegomartinez.system.utils.ViewFactory;
 import java.net.URL;
 import java.util.ResourceBundle;

@@ -27,9 +27,9 @@
             <TextField fx:id="txtUsuario" styleClass="campo" />
             <Label styleClass="etiqueta" text="INGRESE SU CONTRASEÑA" />
             <PasswordField styleClass="campo" />
-            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="380.0">
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="380.0">
                <children>
-                  <Hyperlink fx:id="lnkRegistro" onAction="#onRegistroClick" styleClass="link" text="¿No tienes cuenta? Regístrate" />
+                  <Hyperlink fx:id="lnkRegistro" onMouseClicked="#onRegister" styleClass="link" text="¿No tienes cuenta? Regístrate" />
                </children>
             </HBox>
             <Button id="btn-login" mnemonicParsing="false" text="INICIAR SESION" />
