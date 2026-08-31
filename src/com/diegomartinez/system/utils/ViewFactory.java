@@ -26,28 +26,38 @@ public class ViewFactory {
     }
 
     public void loadScene(String nameFile){
-    Scene scene = null;
-    try {
-        switch (nameFile) {
-            case  "login" -> scene = loadFileFXML("LoginView.fxml", 400, 500);
-            case "register" -> {
-                scene = loadFileFXML("RegistroView.fxml", 400, 500);
-                SceneManager.getInstanciaSceneManager().getStagePrincipal().setTitle("REGISTRO DE USUARIO");
-                SceneManager.getInstanciaSceneManager().getStagePrincipal().setResizable(false);
+        Scene scene = null;
+        try {
+            switch (nameFile) {
+                case  "login" -> scene = loadFileFXML("LoginView.fxml", 400, 500);
+                case "register" -> {
+                    SceneManager.getInstanciaSceneManager().getStagePrincipal().
+                            setTitle("REGISTRO DE USUARIO");
+                    SceneManager.getInstanciaSceneManager().getStagePrincipal().setResizable(false);
+                    scene = loadFileFXML("RegisterView.fxml",350,400);
+                }
+                case "mainmenu" -> {
+                    SceneManager.getInstanciaSceneManager().getStagePrincipal().
+                            setTitle("MENU PRINCIPAL");
+                    SceneManager.getInstanciaSceneManager().getStagePrincipal().setResizable(true);
+                    scene = loadFileFXML("MainMenuView.fxml", 700, 500);
+                }
+                default -> scene = loadFileFXML("LoginView.fxml", 0, 0);
             }
-            default -> scene = loadFileFXML("LoginView.fxml", 0, 0);
+            SceneManager.getInstanciaSceneManager().changeScene(scene);
+        } catch (NullPointerException e) {
+            System.out.println("Error load scene");
+            //alert
         }
-        SceneManager.getInstanciaSceneManager().changeScene(scene);
-    } catch (NullPointerException e) {
-        System.out.println("Error load scene");
     }
-}
     
+    public void viewRegister(){
+        loadScene("register");
+    }
     public void viewLogin() {
         loadScene("login");
     }
-    
-    public void viewRegistro() {
-        loadScene("register");
+    public void viewMainMenu() {
+        loadScene("mainmenu");
     }
 }

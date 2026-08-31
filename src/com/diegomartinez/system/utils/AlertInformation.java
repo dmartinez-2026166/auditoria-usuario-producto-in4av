@@ -4,22 +4,27 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
 public class AlertInformation {
-    
+
     public AlertInformation() {
-        
     }
-    
-    public void mostrarAlerta(String tipoAlerta, String mensaje, String titulo) {
-        AlertType tipo = switch (tipoAlerta) {
-            case "error"   -> AlertType.ERROR;
-            case "confirm" -> AlertType.CONFIRMATION;
-            case "warning" -> AlertType.WARNING;
-            case "info"    -> AlertType.INFORMATION;
-            default        -> AlertType.NONE;
-        };
-        Alert alerta = new Alert(tipo);
-        alerta.setContentText(mensaje);
-        alerta.setHeaderText(titulo);
-        alerta.showAndWait();
+
+    public void viewAlert(String tipoAlerta, String titulo, String encabezado, String mensaje) {
+        
+        AlertType tipo= switch (tipoAlerta.toUpperCase()) {
+            case "INFO", "INFORMATION" -> AlertType.INFORMATION;
+            case "WARNING", "WARN" -> AlertType.WARNING;
+            case "ERROR", "ERR" -> AlertType.ERROR;
+            case "CONFIRMATION", "CONFIRM" -> AlertType.CONFIRMATION;
+//            case "NONE" -> AlertType.NONE;
+            default -> AlertType.INFORMATION;
+        }; 
+        
+        Alert alert = new Alert(tipo);
+        
+        alert.setTitle(titulo);
+        alert.setHeaderText(encabezado);
+        alert.setContentText(mensaje);
+        
+        alert.showAndWait();
     }
 }

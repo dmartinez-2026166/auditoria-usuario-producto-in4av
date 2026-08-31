@@ -1,0 +1,25 @@
+.encabezado {
+    -fx-background-color: #1f2937;
+}
+
+.titulo-encabezado {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.menu-lateral {
+    -fx-background-color: #f3f4f6;
+}
+
+.menu-lateral .button {
+    -fx-background-color: #374151;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8 0 8 0;
+    -fx-background-radius: 4;
+}
+
+.menu-lateral .button:hover {
+    -fx-background-color: #4b5563;
+}

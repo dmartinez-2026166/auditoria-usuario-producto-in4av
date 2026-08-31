@@ -26,13 +26,13 @@
             <Label styleClass="etiqueta" text="INGRESE SU USUARIO O CORREO" />
             <TextField fx:id="txtUsuario" styleClass="campo" />
             <Label styleClass="etiqueta" text="INGRESE SU CONTRASEÑA" />
-            <PasswordField styleClass="campo" />
-            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="380.0">
+            <PasswordField fx:id="pwdContrasena" styleClass="campo" />
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="380.0">
                <children>
-                  <Hyperlink fx:id="lnkRegistro" onMouseClicked="#onRegister" styleClass="link" text="¿No tienes cuenta? Regístrate" />
+                  <Hyperlink onMouseClicked="#onRegister" styleClass="link" text="¿No tienes cuenta? Regístrate" />
                </children>
             </HBox>
-            <Button id="btn-login" mnemonicParsing="false" text="INICIAR SESION" />
+            <Button fx:id="btnIngresar" mnemonicParsing="false" onMouseClicked="#onIngresar" styleClass="btn-login" text="INICIAR SESION" />
          </children>
       </VBox>
    </children>
