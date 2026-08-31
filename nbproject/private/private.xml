@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/controller/LoginController.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/repository/UserInterface.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/config/ConexionDB.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/utils/ViewFactory.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/config/Enviroment.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/controller/MainMenuController.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/repository/UserRepository.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/service/UserStatus.java</file>
-            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/GitHub%20copias/Taller/Bimestre%204/S3/auditoria-usuario-producto/src/com/diegomartinez/system/service/UserService.java</file>
+            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/Taller/Bim%204/S%202/auditoria-usuario-producto/src/com/diegomartinez/system/repository/UserRepository.java</file>
+            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/Taller/Bim%204/S%202/auditoria-usuario-producto/src/com/diegomartinez/system/config/ConexionDB.java</file>
+            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/Taller/Bim%204/S%202/auditoria-usuario-producto/src/com/diegomartinez/system/utils/ViewFactory.java</file>
+            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/Taller/Bim%204/S%202/auditoria-usuario-producto/src/com/diegomartinez/system/utils/AlertInformation.java</file>
+            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/Taller/Bim%204/S%202/auditoria-usuario-producto/src/com/diegomartinez/system/repository/UserInterface.java</file>
+            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/Taller/Bim%204/S%202/auditoria-usuario-producto/src/com/diegomartinez/system/utils/SceneManager.java</file>
+            <file>file:/C:/Users/diego/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/Taller/Bim%204/S%202/auditoria-usuario-producto/src/com/diegomartinez/system/config/Enviroment.java</file>
         </group>
     </open-files>
 </project-private>
